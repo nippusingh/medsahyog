@@ -1,0 +1,119 @@
+body {
+    background-image: url("../Assets/medicinebg.jpg"); /* Update the path */
+    background-size: cover;  /* Make it cover the entire screen */
+    background-position: center; /* Center the image */
+    background-attachment: fixed; /* Keep it fixed while scrolling */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    
+}
+/*body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}*/
+
+header {
+    background: hsl(193, 86%, 67%);
+    color: rgb(5, 5, 5);
+    padding: 10px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    margin: 10px;
+    color: rgb(10, 10, 10);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+main {
+    margin-top: 20px;
+}
+
+input {
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+#searchResults {
+    margin-top: 20px;
+}
+/* Styling for Homepage Description */
+.homepage-intro {
+    background: linear-gradient(to right, #c0dcf2, #e9ecef); /* Light gradient background */
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.homepage-intro .container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.homepage-intro h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.homepage-intro .highlight {
+    color: #ff4500; /* Eye-catching orange color */
+}
+
+.homepage-intro p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.homepage-intro ul {
+    text-align: left;
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.homepage-intro ul li {
+    font-size: 16px;
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.homepage-intro ul li:last-child {
+    border-bottom: none;
+}
+
+.homepage-intro .cta {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0e3f1a; /* Green color for CTA */
+    margin-top: 20px;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease Information</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Disease Information</h1>
+    <input type="text" id="diseaseName" placeholder="Enter disease name...">
+    <button onclick="getDiseaseInfo()">Get Info</button>
+    <div id="diseaseInfo"></div>
+
+    <script>
+        function getDiseaseInfo() {
+            let name = document.getElementById("diseaseName").value;
+            fetch(`http://localhost:5000/disease/${name}`)
+                .then(response => response.json())
+                .then(data => {
+                    let infoDiv = document.getElementById("diseaseInfo");
+                    infoDiv.innerHTML = `
+                        <h2>${data[0].name}</h2>
+                        <p><strong>Symptoms:</strong> ${data[0].symptoms}</p>
+                    `;
+                })
+                .catch(error => console.error("Error:", error));
+        }
+    </script>
+</body>
+</html>

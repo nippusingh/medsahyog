@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine Recommendation</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Get Medicine Recommendations</h1>
+    <input type="text" id="symptom" placeholder="Enter symptom...">
+    <button onclick="recommendMedicine()">Recommend</button>
+    <div id="recommendations"></div>
+
+    <script>
+        function recommendMedicine() {
+            let symptom = document.getElementById("symptom").value;
+            fetch(`http://localhost:5000/recommend?symptom=${symptom}`)
+                .then(response => response.json())
+                .then(data => {
+                    let resultDiv = document.getElementById("recommendations");
+                    resultDiv.innerHTML = data.map(m => `<p>${m.name}: ${m.uses}</p>`).join("");
+                });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+body {
+
+    font-family: Arial, sans-serif;
+    background: url('../Assets/medimage2.png') no-repeat center center fixed; 
+    background-size: cover;
+    text-align: center;
+    
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+input {
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#suggestions {
+    width: 20%;
+    margin: auto;
+    background: rgb(117, 241, 226);
+    box-shadow: 0px 0px 5px rgb(10, 10, 10);
+    border-radius: 5px;
+    text-align: left;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+}
+
+.suggestion-item:hover {
+    background: #f1f1f1;
+}
+
+.no-match {
+    padding: 10px;
+    color: red;
+}
+
+.medicine-card {
+    background: rgb(128, 242, 163);
+    padding: 20px;
+    margin: 20px auto;  /* Centering horizontally */
+    width: 50%;  /* Adjust as needed */
+    box-shadow: 0px 0px 5px rgb(6, 63, 34);
+    border-radius: 5px;
+    border: 2px solid #4CAF50;
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
